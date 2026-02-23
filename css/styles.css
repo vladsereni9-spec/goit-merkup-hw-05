@@ -498,10 +498,11 @@ margin-bottom: 0;
 .form-label {
   display: block;
   margin-bottom: 4px;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
 }
 
 .form-input {
@@ -611,10 +612,14 @@ input:checked + .custom-checkbox .checkbox-icon {
   line-height: 2;
   letter-spacing: 0.04em;
   color: #ffffff;
+  outline: none;
+transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.subscribe-input:focus {
+  border-color: #31d0aa;
+}
 .subscribe-input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
+ color: #ffffff;
 }
 
 .subscribe-btn {
@@ -684,7 +689,7 @@ input:checked + .custom-checkbox .checkbox-icon {
   position: relative;
   width: 408px;
   min-height: 584px;          
-  background-color: #ffffff;   
+  background-color: #fcfcfc;   
   border-radius: 4px;
   box-shadow: 
     0 1px 1px rgba(0,0,0,0.12),
@@ -701,13 +706,12 @@ input:checked + .custom-checkbox .checkbox-icon {
 /* Модалка */
 .modal-title {
   font-weight: 500;
-  font-size: 20px;          
-  line-height: 1.15;
+  font-size: 16px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-align: center;
   margin-bottom: 16px;
-
 }
 
 .modal-close {
